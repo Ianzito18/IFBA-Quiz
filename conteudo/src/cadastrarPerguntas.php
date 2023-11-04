@@ -21,7 +21,7 @@
             <span><?php echo $_SESSION["user"]?></span>
             <?php 
                 if(glob("../img/*") == null){?>
-                    <img class="perfil" src="../admin/placeholder/blank-profile-picture.png" alt="">
+                    <img class="perfil" src="../img/placeholder/blank-profile-picture.png" alt="">
             <?php }
                 else{?>
                     <img class="perfil" src="../img/<?php echo glob("../img/*")[0]?>" alt="">
