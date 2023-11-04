@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+body, input, button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+/* nav */
+nav{
+    background-color: #000;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: .5rem;
+}
+
+.aBack{
+    display: flex;
+}
+
+ion-icon{
+    padding: .5rem;
+    font-size: 2rem;
+    color: #FFF;
+    transition: 300ms ease;
+    margin: 0;
+}
+ion-icon:hover{
+    background-color: #222;
+}
+
+.usuario{
+    color: white;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding: .2rem;
+    border-radius: 3rem;
+    transition: 300ms ease;
+    text-decoration: none;
+}
+.usuario:hover{
+    background-color: #222;
+}
+
+.perfil{
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* main */
+form{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.quiz{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.questao{
+    border: solid 3px #AAA;
+    padding: 0;
+    padding-bottom: .5rem;
+}
+
+.enunciado{
+    border-bottom: solid 2px #AAA;
+    padding: .25rem 1rem;
+    margin-bottom: .5rem;
+}
+.alternativas{
+    padding: .25rem 1rem;
+}
+
+.botao{
+    font-size: 11pt;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 2rem 0;
+    padding: .5rem 1.75rem;
+    border-radius: 0;
+    border: solid 1px #444;
+    background-color: transparent;
+    transition: 350ms ease;
+}
+.botao:hover{
+    color: #FFF;
+}
+.botao::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 350ms ease;
+}
+.botao:hover::before{
+    width: 100%;
+}
+
+.resultados{
+    max-width: 70%;
+    margin: 0 auto;
+    border: solid 3px #000;
+    margin-bottom: 2rem;
+}
+
+.resTitulo{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+    padding-bottom: calc(.5rem + 3px);
+}
+
+.resInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .75rem;
+}
+
+.cadastro{
+    text-align: center;
+}
